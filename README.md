@@ -82,6 +82,7 @@ EMILO TASK/
 │   ├── src/
 │   │   ├── api/client.js              # Fetch wrappers for /api endpoints
 │   │   ├── components/
+│   │   │   ├── CategoryFallbackVisual.jsx # Category-matched SVG 404 fallback
 │   │   │   ├── ProductCard.jsx        # Product details, price, score & reason
 │   │   │   ├── ProductGrid.jsx        # Results grid, loading, empty & error UI
 │   │   │   └── SearchBar.jsx          # Occasion input & suggested chips
@@ -93,6 +94,9 @@ EMILO TASK/
 │   ├── index.html
 │   ├── package.json
 │   └── vite.config.js
+├── screenshots/
+│   ├── occasion-input.jpg             # Initial occasion search screen
+│   └── product-results.jpg            # Ranked recommendations below input
 ├── .gitignore
 └── README.md
 ```
@@ -289,6 +293,16 @@ npm --prefix frontend run build
 
 ### Unknown Occasion Request (`"xyz123unknown"`)
 Returns `200 OK` with `"total_results": 0`, `"recommendations": []`, and `"message": "No strong matches found for 'xyz123unknown'. Try occasions like Birthday, Wedding, Diwali, Valentine's Day, or Office Party."`.
+
+### UI Screenshots
+
+**Occasion Input Screen:**
+
+![Occasion Input](screenshots/occasion-input.jpg)
+
+**Product Results Screen (`Diwali`):**
+
+![Product Results](screenshots/product-results.jpg)
 
 ---
 
